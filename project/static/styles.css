@@ -1,0 +1,281 @@
+#nav
+{
+    border-top: 1px solid black;
+    border-bottom: 1px solid black;
+    padding-bottom: 20px;
+    padding-top: 20px;
+    padding-right: 20px;
+    background-color: #1F1F1F;
+}
+
+#search-btn {
+  margin-left: 1em;
+  height: 5.0em;
+  background-color: #FFA500;
+  color: white;
+  font-family: "Noto Sans", sans-serif;
+  border: none;
+}
+
+
+.btn-verse {
+  background-color: #FFA500;
+  border: none;
+  margin-left: 3em;
+  font-size: 24px;
+}
+
+.background_color {
+    background-color: #353535;
+}
+
+
+.nav-link
+{
+    color: #ffffff;
+}
+
+
+.noto-sans-header {
+    font-family: "Noto Sans", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 450;
+    font-style: normal;
+    font-variation-settings:
+      "wdth" 100;
+  }
+
+.anek-tamil-front_page {
+    font-family: "Anek Tamil", sans-serif;
+    color: #ffffff;
+    font-optical-sizing: auto;
+    font-size: clamp(33px, 4vw, 65px);
+    font-weight: 800;
+    font-style: normal;
+    font-variation-settings:
+      "wdth" 100;
+  }
+
+  .anek-tamil-search {
+    font-family: "Anek Tamil", sans-serif;
+    color: #ffffff;
+    font-optical-sizing: auto;
+    font-size: 2em;
+    font-weight: 800;
+    font-style: normal;
+    font-variation-settings:
+      "wdth" 100;
+  }
+
+
+
+  .oswald-reference {
+    font-family: "Oswald", sans-serif;
+    font-optical-sizing: auto;
+    color: #ffffff;
+    font-size: 2.4em;
+    font-weight: 400;
+    font-style: normal;
+  }
+
+  .oswald-verse {
+    font-family: "Oswald", sans-serif;
+    font-optical-sizing: auto;
+    color: #ffffff;
+    font-size: 2.8em;
+    font-weight: 280;
+    font-style: normal;
+  }
+
+
+  .flex {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding-top: 4.3em;
+    padding-bottom: .9em;
+
+  }
+
+  .form-field {
+    width: 55em;
+    height: 3.5em;
+    background: transparent;
+    border: 2px solid white;
+    color: white;
+    border-radius: 18px;
+    font-size: 25px;
+
+  }
+
+  .flex-form {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 2em;
+
+  }
+
+  #last_supper {
+    position: absolute;
+    top: 0px;
+    right: 0;
+    bottom: 0;
+    z-index: -1;
+    opacity: 45%;
+  }
+
+  /*.content-wrapper {
+    display: grid;
+    place-items: center;
+    align-content: center;
+    min-height: 100vh;
+*/
+
+  .content-wrapper {
+    position: relative;
+    z-index: 0;
+    overflow-x: hidden;
+  }
+
+  .flex, .button-form, .flex-form {
+    position: relative;
+    z-index: 1;
+  }
+
+  @media (min-aspect-ratio: 16/9) {
+    #last_supper{
+      width: 100%;
+      height: auto;
+    }
+  }
+
+  @media (max-aspect-ratio: 16/9) {
+    #last_supper{
+      width: auto;
+      height: 100%;
+    }
+  }
+
+
+
+  .btn-homepage {
+    margin:0 auto;
+    display:block;
+    background-color: #FFA500;
+    border: none;
+    margin-bottom: 50vh;
+
+  }
+
+  .verse-body {
+
+    width: 50vw;
+    height: 500px;
+    padding-left: 1em;
+    margin-top: 1.2em;
+  }
+
+  .verse-header {
+    width: 50vw;
+    padding-left: 3em;
+    padding-top: 2em;
+  }
+
+  .hidden-text {
+    opacity: 0;
+    filter: blur(5px);
+    transform: translateX(-100%);
+    transition: all 1s;
+  }
+
+  .show-text {
+    filter: blur(0);
+    opacity: 1;
+    transform: translateX(0);
+  }
+
+  .hidden-adam {
+    opacity: 0;
+    filter: blur(5px);
+    transform: translateX(-100%);
+    transition: all 3s;
+  }
+
+  .show-adam {
+    filter: blur(0);
+    opacity: 1;
+    transform: translateX(6%);
+  }
+
+  .hidden-god {
+    opacity: 0;
+    filter: blur(5px);
+    transform: translateX(100%);
+    transition: all 3s;
+  }
+
+  .show-god {
+    filter: blur(0);
+    opacity: 1;
+    transform: translateX(-3%);
+  }
+
+  .hidden-author {
+    opacity: 0;
+    filter: blur(5px);
+    transform:translateX(100%);
+    transition: all 1s;
+  }
+
+  .show-author {
+    filter: blur(0);
+    opacity: 1;
+    transform: translateX(0);
+
+  }
+
+  .hidden-verse {
+    opacity: 0;
+    filter: blur(5px);
+    transform: translateX(-100%);
+    transition: all 1.2s;
+
+  }
+
+  .show-verse {
+    filter: blur(0);
+    opacity: 1;
+    transform: translateX(0);
+  }
+
+  .hidden-reference {
+    opacity: 0;
+    filter: blur(5px);
+    transform: translateX(-100%);
+    transition: all 1.5s;
+  }
+
+  .show-reference {
+    filter: blur(0);
+    opacity: 1;
+    transform: translateX(0);
+  }
+
+
+
+  @media(prefers-reduced-motion) {
+    .hidden {
+      transition: none;
+    }
+
+  }
+
+
+
+
+  /* Removes the outline when clicking on form */
+  textarea:focus, input:focus{
+    outline: none;
+}
+

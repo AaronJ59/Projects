@@ -1,0 +1,34 @@
+{% extends "layout.html" %}
+
+
+{% block main %}
+    <style>
+        .container {
+            display: flex;
+            justify-content: center;
+            width: 30vw;
+            height: 30vw;
+        }
+
+    </style>
+    <div class="content-wrapper">
+        <div class="flex anek-tamil-front_page hidden-text">
+            Searching For Timeless Advice?
+        </div>
+        <button type="button" class="button-form btn btn-primary btn-lg btn-homepage" onClick="document.getElementById('search').scrollIntoView();">Matthew 7:7-8</button>
+        <div class="container">
+            <img src="static/adam_full_body.png" class="hidden-adam">
+            <img src="static/god_full_body.png" class="hidden-god">
+        </div>
+        <div class="flex anek-tamil-search hidden-text">
+            Feeling sad? Anxious? Angry? Struggling with temptation? Type it down.
+        </div>
+        <form action="/verses" method="post">
+            <div class="flex-form" id="search">
+                <input class="form-field" type="text" name="text-form-field" autocomplete="off">
+                <button type="submit" id="search-btn">Search Verses</button>
+            </div>
+        </form>
+        <img src="static/lastsupperfaded.png" id="last_supper">
+    </div>
+{% endblock %}

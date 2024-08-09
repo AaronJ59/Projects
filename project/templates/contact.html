@@ -1,0 +1,54 @@
+{% extends "layout.html" %}
+
+{% block main %}
+<style>
+    .form-label {
+        color: white;
+        font-family: "Oswald", sans-serif;
+        font-optical-sizing: auto;
+        color: #ffffff;
+        font-size: 3em;
+    }
+    #emailHelp {
+        color: white;
+    }
+    #InputEmail {
+        height: 50px;
+    }
+    #InputMessage {
+        min-height: 80px; /* Set a minimum height */
+        width: 100%; /* Make sure it spans the width of the form */
+        overflow-y: hidden; /* Prevents scrollbar from appearing initially */
+    }
+    .container-form {
+        display: flex;
+        justify-content: center;
+        min-height: 100vh; /* vh stands for viewport height */
+        margin-top: 5em;
+    }
+    form {
+        width: 700px;
+    }
+</style>
+<div class="container-form">
+    <form action="https://formspree.io/f/mqkrwper" method="POST">
+        <div class="mb-3">
+            <label  for="exampleInputEmail1" class="form-label">Email address</label>
+            <input name="email" type="email" class="form-control" id="InputEmail" aria-describedby="emailHelp" autocomplete="off">
+            <div id="emailHelp" class="form-text">Your email will never be shared</div>
+        </div>
+        <div class="mb-3">
+            <label for="InputMessage" class="form-label">Message</label>
+            <textarea name="message" class="form-control" id="InputMessage" oninput="autoResize(this)"></textarea>
+        </div>
+        <button type="submit" class="btn btn-primary">Submit</button>
+    </form>
+</div>
+<script>
+    function autoResize(textarea) {
+        textarea.style.height = 'auto'; // Reset the height
+        textarea.style.height = textarea.scrollHeight + 'px'; // Set the height to scroll height
+    }
+</script>
+
+{% endblock %}

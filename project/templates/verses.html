@@ -1,0 +1,60 @@
+{% extends "layout.html" %}
+
+
+{% block main %}
+    <div class="oswald-reference verse-header hidden-reference">
+        <u>
+            {{ verses_lod['reference'] }}
+        </u>
+    </div>
+    <style>
+        .container {
+            position: absolute;
+            width: 30vw;
+            height: 30vw;
+            right: 90px;
+        }
+
+        .verse-image {
+            filter: grayscale(100%);
+            transform: scale(1);
+            transition: filter 0.25s, transform 0.25s;
+        }
+
+        .verse-image:hover {
+            filter: grayscale(0%);
+            transform :scale(1.2);
+        }
+
+        img {
+            width: 100%;
+            height: 100%;
+            object-fit: contain;
+        }
+    </style>
+    <script>
+        document.addEventListener('DOMContentLoaded', function() {
+        document.querySelector(".container").addEventListener('click', function(e) {
+            var authorInfo = '{{ author_info }}'.replace(/&#39;/g, "'");
+            Swal.fire({
+
+                title: "{{ author_name }}",
+                text: authorInfo,
+                confirmButtonColor: "#FFA500"
+
+            });
+        });
+    });
+    </script>
+    <div class="container hidden-author" alt="Author">
+        <img class="verse-image" src="static/{{ image_path }}.png">
+    </div>
+    <div class="verse-body oswald-verse hidden-verse">
+        {{ verses_lod['verse'] }}
+    </div>
+
+    <form action="/verses" method="post">
+        <button type="submit" class="btn btn-primary btn-verse btn-lg">Next Verse</button>
+    </form>
+
+{% endblock %}
