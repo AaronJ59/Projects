@@ -1,5 +1,5 @@
 # Eternal Encouragement
-#### Video Demo: https://youtu.be/IqA_xDTG-h4
+#### Video Demo: https://youtu.be/Ec2yQxWwp5A
 ### <ins>Description<ins>
 
 Eternal Encouragement is a website made for the purpose of allowing users to easily access timeless advice from the Holy Bible on how to act with our emotions and handle temptations. We can't control every situation in our lives, but we can control how we act with the emotions that a situation may produce. The purpose of this site is to give aid on that department.
