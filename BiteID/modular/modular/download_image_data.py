@@ -1,4 +1,4 @@
-%%writefile modular/download_image_data.py
+
 
 def download_image_data(source: str,
                         destination: str) -> Path:
