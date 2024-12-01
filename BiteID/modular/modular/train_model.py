@@ -31,7 +31,7 @@ def train_step(model: torch.nn.Module,
     optimizer.zero_grad()
 
     # Loss backwards
-    loss.backwards()
+    loss.backward()
 
     # Optimizer step
     optimizer.step()
