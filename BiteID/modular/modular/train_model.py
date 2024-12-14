@@ -67,7 +67,7 @@ def test_step(model: torch.nn.Module,
 
       y_pred_labels = torch.argmax(y_pred_logits, dim=1)
 
-      test_acc = test_acc + ((y_pred_labels == y).sum().item()/len(y_pred_logits))
+      test_acc = test_acc + ((y_pred_labels == y).sum().item()/len(y_pred_labels))
 
   test_loss = test_loss / len(dataloader)
   test_acc = test_acc / len(dataloader)
