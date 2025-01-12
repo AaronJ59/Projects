@@ -1,0 +1,22 @@
+{% extends "layout.html" %}
+
+{% block main %}
+<style>
+    .anek-tamil-error {
+        font-family: "Anek Tamil", sans-serif;
+        color: #ffffff;
+        font-optical-sizing: auto;
+        font-size: clamp(33px, 2vw, 65px);
+        font-weight: 800;
+        font-style: normal;
+        font-variation-settings:
+        "wdth" 100;
+
+    }
+</style>
+
+<div class="flex anek-tamil-error">
+    Apologies! A match wasn't found for your search. Please check your spelling and try different keywords.
+</div>
+
+{% endblock %}
