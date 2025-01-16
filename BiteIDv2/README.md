@@ -14,3 +14,7 @@ This application runs on two convolutional neural networks (CNN) - specifically 
 
 
 ### <ins>How it's Made<ins>
+
+**Tech Used:** Python, PyTorch, Gradio, HuggingFace
+
+1. **multiclass_data_creation_food80.ipynb**: I created a multiclass dataset of 80 food classes from the ![Food101 dataset](https://pytorch.org/vision/main/generated/torchvision.datasets.Food101.html)
