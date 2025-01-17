@@ -1,4 +1,5 @@
 import requests
+import os
 
 from flask import redirect, render_template, session
 from functools import wraps
@@ -44,10 +45,10 @@ def login_required(f):
 
     return decorated_function
 
-
+API_URL = os.getenv("API_URL", "https://finance.cs50.io/quote")
 def lookup(symbol):
     """Look up quote for symbol."""
-    url = f"https://finance.cs50.io/quote?symbol={symbol.upper()}"
+    url = f"{API_URL}?symbol={symbol.upper()}"
     try:
         response = requests.get(url)
         response.raise_for_status()  # Raise an error for HTTP error responses
