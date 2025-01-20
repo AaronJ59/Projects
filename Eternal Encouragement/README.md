@@ -2,8 +2,7 @@
 #### Video Demo: https://youtu.be/Ec2yQxWwp5A
 ### <ins>Description<ins>
 
-Eternal Encouragement is a website made for the purpose of allowing users to easily access timeless advice from the Bible. We can't control every situation in our lives, but we can control how we act with the emotions that a situation may produce. The purpose of this site is to help with such circumstances.
-
+Eternal Encouragement is a website made for the purpose of allowing users to easily access timeless advice from the Bible.
 At the bottom of the homepage, users can type out the emotion/emotions that they are experiencing or addictions that they are struggling with. Once the user is done typing, multiple bible verses are generated that relate to the emotions/temptations expressed in the text box. Next to the verse on the screen, an image of the person who authored the book is generated. Clicking on the image will produce a popup that gives important and interesting information about that author.
 
 
