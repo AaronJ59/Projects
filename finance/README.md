@@ -2,7 +2,7 @@
 
 Web demo: https://aj-finance.onrender.com
 
-### <ins>Description<ins>\
+### <ins>Description<ins>
 
 **Technologies Used**: Python, Flask, SQLite, HTML, CSS,JavaScript, Jinja, 
 
