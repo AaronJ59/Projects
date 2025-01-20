@@ -4,7 +4,7 @@ Web demo: https://aj-finance.onrender.com
 
 ### <ins>Description<ins>
 
-**Technologies Used**: Python, Flask, SQLite, HTML, CSS,JavaScript, Jinja, 
+**Technologies Used**: Python, Flask, SQLite, HTML, CSS, JavaScript, Jinja, 
 
 AJ Finance is a full-stack web application made for the purpose of simulating stock trading. Once you have registered and logged in, you can buy shares, sell your investments, query for a stock price, and view your transaction history and portfolio. You are given $10,000 in fake money and the freedom to invest into any stock. You can see your investments grow/diminish in your portfolio.
 
