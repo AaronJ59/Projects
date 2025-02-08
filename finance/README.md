@@ -2,6 +2,8 @@
 
 Web demo: https://aj-finance.onrender.com
 
+It may take a minute for the website to boot up due to the limitations of a free subscription. Once the website is booted up, the load times are much faster.
+
 ### <ins>Description<ins>
 
 **Technologies Used**: Python, Flask, SQLite, HTML, CSS, JavaScript, Jinja, 
