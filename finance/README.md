@@ -13,7 +13,7 @@ AJ Finance is a full-stack web application made for the purpose of simulating st
  
 ### <ins>Disclaimers<ins>
 
-* AJ Finance does NOT use current stock prices (I have a feeling that would be illegal). The API is set back a few months but the stock prices/your investments are updated consistently and in real time.
+* AJ Finance does NOT use current stock prices. The API is set back a few months but the stock prices/your investments are updated consistently and in real time.
 * All the functions in **helpers.py** and **apology.html** were provided by the CS50x course.
 
 
